@@ -1,0 +1,63 @@
+name: snap
+description: "Surveillance Network for Advanced Patrolling"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.1.3
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  loading_animation_widget:
+  date_format:
+  date_time_format:
+  flutter_secure_storage:
+  http:
+  geolocator: ^13.0.2
+  socket_io_client: ^3.0.2
+  image_picker: ^1.1.2
+  slider_button: ^2.1.0
+  action_slider: ^0.7.0
+  getwidget: ^4.0.0
+  url_launcher: ^6.3.1
+  shared_preferences: ^2.3.3
+  permission_handler:
+#  flutter_launcher_icons:
+  flutter_native_splash: ^2.0.0
+
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/logo.png
+    - assets/images/logo-white.png
+    - assets/images/punjab-police.webp
+    - assets/images/appIcon.png
+    - assets/appLogo.png
+
+
+flutter_native_splash:
+  color: "#ffffff" # Background color
+  image: assets/appLogo.png # Path to the splash screen logo
+  android: true # Enable splash screen for Android
+  ios: true # Enable splash screen for iOS
+  android_gravity: center # Position of the image (e.g., center, top, bottom)
+  ios_content_mode: scaleAspectFit # iOS alignment for the image
+  web: false # Optional: add if you want to configure the splash for web
+
+#flutter_launcher_icons:
+#  android: true
+#  ios: true
+#  image_path: assets/appLogo.png
